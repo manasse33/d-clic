@@ -66,6 +66,8 @@ transition: color 0.3s ease-in-out;
 }
 
 
+
+
 .about{
     background-color: rgba(255, 255, 255, 0.6);
     display: grid;
@@ -193,3 +195,108 @@ footer{
     border-radius: 50%;
 }
 
+
+
+@media screen and (max-width: 768px) {
+    .imgage {
+        height: 50vh; /* Sur les petits écrans, tu peux ajuster la hauteur */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .imgage {
+        height: 40vh; /* Pour les très petits écrans (mobiles), encore plus petit */
+    }
+}
+
+/* Média query pour les tablettes et petits écrans */
+@media screen and (max-width: 768px) {
+    .about {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Ajuste la grille pour les petites résolutions */
+        padding: 15px;
+    }
+}
+
+/* Média query pour les très petits écrans (smartphones) */
+@media screen and (max-width: 480px) {
+    .about {
+        grid-template-columns: 1fr; 
+        padding: 10px;
+    }
+}
+
+
+/* Média query pour les tablettes (résolution maximale de 768px) */
+@media screen and (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr; /* Passe en une seule colonne pour les tablettes */
+        padding: 30px; /* Réduit le padding pour les tablettes */
+    }
+}
+
+/* Média query pour les très petits écrans (résolution maximale de 480px) */
+@media screen and (max-width: 480px) {
+    .grid {
+        grid-template-columns: 1fr; /* Passe en une seule colonne pour les smartphones */
+        padding: 20px; /* Réduit encore plus le padding pour les petits écrans */
+    }
+}
+
+/* Média query pour les tablettes (résolution maximale de 768px) */
+@media screen and (max-width: 768px) {
+    .formateur {
+        grid-template-columns: 1fr; /* Passe à une seule colonne pour les tablettes */
+        height: auto; /* Ajuste la hauteur pour les petites tailles d'écran */
+        top: 30px; /* Réduit l'espace du haut sur les écrans plus petits */
+    }
+}
+
+/* Média query pour les très petits écrans (résolution maximale de 480px) */
+@media screen and (max-width: 480px) {
+        .formateur {grid-template-columns: 1fr; /* Passe à une seule colonne pour les smartphones */
+        padding: 10px; /* Réduit le padding pour économiser de l'espace */
+        height: auto; /* Laisse la hauteur s'ajuster automatiquement */
+    }
+}
+
+/* Média query pour les tablettes (résolution maximale de 768px) */
+@media screen and (max-width: 768px) {
+    .team {
+        grid-template-columns: 1fr; /* Passe à 1 colonne sur les tablettes */
+        padding: 30px;
+    }
+
+    .team-member {
+        max-height: 400px; 
+}
+
+
+}
+
+/* Média query pour les très petits écrans (résolution maximale de 480px) */
+@media screen and (max-width: 480px) {
+    .team {
+        grid-template-columns: 1fr; /* Passe à 1 colonne pour les smartphones */
+        gap: 15px; /* Réduit l'écart entre les éléments */
+        padding: 20px; /* Réduit le padding */
+    }
+
+    .team-member {
+        max-height: 350px; /* Réduit la hauteur pour les smartphones */
+        padding-top: 30px; /* Ajuste le padding pour les petites tailles */
+    }
+}
+
+
+/* Pour les très petits écrans comme les smartphones (moins de 480px) */
+@media screen and (max-width: 480px) {
+    nav ul {
+        flex-direction: column; /* Passe le menu en colonne pour les écrans plus petits */
+        gap: 15px; /* Réduit l'écart entre les éléments */
+        text-align: center; /* Centrer les éléments du menu */
+    }
+
+    header {
+        padding: 10px 10px; /* Réduit encore plus le padding */
+    }
+}
