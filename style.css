@@ -351,7 +351,7 @@ footer{
 @media screen and (max-width: 768px) {
     .cv-gril {
         grid-template-columns: 1fr; /* Passe en une seule colonne pour les tablettes */
-        padding: 10px; /* Réduit le padding pour les tablettes */
+        /* Réduit le padding pour les tablettes */
     }
 }
 
@@ -359,6 +359,6 @@ footer{
 @media screen and (max-width: 480px) {
     .cv-grid {
         grid-template-columns: 1fr; /* Passe en une seule colonne pour les smartphones */
-        padding: 5px; /* Réduit encore plus le padding pour les petits écrans */
+         /* Réduit encore plus le padding pour les petits écrans */
     }
 }
